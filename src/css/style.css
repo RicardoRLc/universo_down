@@ -24,3 +24,90 @@ body {
     display: block;
     max-width: 100%;
   } */
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    background: transparent;
+    color: transparent;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: 180px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    padding-top: 50px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+      margin-left: 0px;
+  }
+  #sidebar.active {
+      margin-left: 180px;
+  }
+  #sidebarCollapse span {
+      display: none;
+  }
+}
+
+@media (min-width: 425px) {
+  #sidebar {
+      margin-left: 0px;
+  }
+  #sidebar.active {
+      margin-left: 180px;
+  }
+  #sidebarCollapse span {
+      display: none;
+  }
+}
+
+@media (min-width: 320px) {
+  #sidebar {
+      margin-left: 0px;
+  }
+  #sidebar.active {
+      margin-left: 180px;
+  }
+  #sidebarCollapse span {
+      display: none;
+  }
+}

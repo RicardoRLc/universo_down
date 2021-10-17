@@ -2,7 +2,7 @@
 $.get("navbar.html", function (data) {
     $("#nav-placeholder").replaceWith(data);
 });
-
+ 
 /* Função Sub Menu */
 $(document).on("click", ".side-menu > ul > li", function (e) {
     if ($(this).find(".sub-menu").length > 0) {
@@ -12,4 +12,5 @@ $(document).on("click", ".side-menu > ul > li", function (e) {
       $(this).find(".sub-menu").stop().slideToggle();
     }
   });
+  
   
