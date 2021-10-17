@@ -24,6 +24,16 @@ p {
   color: #b3b3b3;
 }
 
+.ml-1 {
+    margin-left: 10px;
+}
+
+.ml-2 {
+    margin-left: 15px;
+}
+
+
+
 /* img {
     display: block;
     max-width: 100%;
@@ -71,10 +81,34 @@ input.form-control {
   background-color: #f8f8f8;
   border: 1px solid #efefef;
 }
+.card-body {
+  padding: 1rem 1rem !important;
+}
 
-.btn.btn.success {
-    padding-left: 100px !important;
-    background-color: black !important;
+.btn-danger {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .085rem;
+    font-size: 12px;
+}
+
+.btn-success {
+    background-color: rgb(60, 152, 165) !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .085rem;
+    font-size: 12px;
+}
+
+.btn-success:hover {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    border: 0 solid #fff ;
+}
+
+.card > hr {
+    margin-right: 35px !important;
+    margin-left: 35px !important;
 }
 
 
