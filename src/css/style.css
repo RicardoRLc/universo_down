@@ -81,6 +81,7 @@ input.form-control {
   background-color: #f8f8f8;
   border: 1px solid #efefef;
 }
+
 .card-body {
   padding: 1rem 1rem !important;
 }
@@ -117,6 +118,28 @@ input.form-control {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+
+
+@media (min-width: 768px) {
+    #sidebar {
+      margin-left: -250px;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #sidebarCollapse span {
+      display: none;
+    }
+    span.wrap-icon.fa.fa-home.p-4 {
+    }
+    span.menu-text.p-4 {
+    }
+    a.d-flex.align-items-sm-center.sub {
+    }
+    div.card.col-9 {
+        width: auto !important;
+    }
+  }
 
 @media (max-width: 768px) {
   #sidebar {
