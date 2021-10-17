@@ -1,3 +1,7 @@
+/* ---------------------------------------------------
+    ESTILOS GERAIS
+----------------------------------------------------- */
+
 body {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -60,7 +64,10 @@ main {
   min-height: 880px;
 } */
 
-/* Menu Closed */
+/* ---------------------------------------------------
+    MENU FECHADO
+----------------------------------------------------- */
+
 aside {
   width: 80px;
   left: 0;
@@ -217,8 +224,8 @@ aside .side-inner .nav-menu ul li {
 aside .side-inner .nav-menu ul li a {
   display: block;
   padding-left: 23px;
-  padding-right: 30px;
-  padding-top: 10px;
+  padding-right: 23px;
+  padding-top: 7px;
   padding-bottom: 10px;
   color: #b1b1b1; 
   position: relative;
@@ -282,7 +289,10 @@ main .post-content .post-meta {
   color: #ccc;
 }
 
-/* Burger */
+/* ---------------------------------------------------
+    BURGER
+----------------------------------------------------- */
+
 .burger {
   width: 28px;
   height: 32px;
@@ -431,11 +441,11 @@ aside .side-inner .nav-menu ul li a {
 
 }
 
-a.d-flex.align-items-sm-center.sub {
+li a.d-flex.align-items-sm-center.sub {
   background-color: rgb(165, 214, 219);
-  height: 5%;
+  height: auto;
   width: auto;
-  padding-top: 0 !important;
+  padding-top: 10px !important;
   padding-right: 0 !important;
 }
 
@@ -447,15 +457,17 @@ a.d-flex.align-items-sm-center.sub {
   -ms-transform: translateX(15%);
   transform: translateX(15%);
 }
-
 span.wrap-icon.fa.fa-home.p-4 {
-  padding-right: 3px !important;
+  padding: 2px 0px 0px 20px !important;
+  height: 30px !important;
 }
 
 span.menu-text.p-4 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding: 0px 0px 0px 5px !important;
 
 }
+
+
+
 
 
