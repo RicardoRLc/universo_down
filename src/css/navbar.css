@@ -60,8 +60,9 @@ main {
   min-height: 880px;
 } */
 
+/* Menu Closed */
 aside {
-  width: 70px;
+  width: 80px;
   left: 0;
   z-index: 1001;
   position: fixed;
@@ -123,16 +124,17 @@ aside .side-inner .logo-wrap {
   float: left;
 }
 aside .side-inner .logo-wrap .logo {
-  width: 50px;
-  float: left;
-  height: 50px;
-  background: #007bff;
-  border-radius: 50%;
-  position: relative;
+  width: auto;
+  float: center;
+  height: auto;
   -webkit-transition: 0.3s margin ease;
   -o-transition: 0.3s margin ease;
   transition: 0.3s margin ease;
-  margin: 0 auto 50px 10px;
+  margin-left: 5%;
+}
+
+aside .side-inner .logo-wrap .logo img {
+  height: 100%;
 }
 .show-sidebar aside .side-inner .logo-wrap .logo {
   margin: 0 auto 50px 20px;
@@ -230,8 +232,8 @@ aside .side-inner .nav-menu ul li a:hover {
   outline: none;
 }
 aside .side-inner .nav-menu ul li a:hover {
-  color: #000;
-  background: #2980b9;
+  color: #FFF;
+  background: rgb(60, 152, 165);
 }
 
 aside .side-inner .nav-menu ul li a .wrap-icon {
@@ -255,12 +257,8 @@ aside .side-inner .nav-menu ul li a .menu-text {
 
 /* Color Menu Fechado */
 aside .side-inner .nav-menu ul li.active a {
-  color: #000;
+  color: rgb(82, 79, 79);
 }
-
-aside .side-inner .nav-menu ul li.active a .menu-text .sub{
-}
-
 
 .show-sidebar main {
   -webkit-transform: translateX(0px);
@@ -404,7 +402,7 @@ div.side-menu > ul > li{
 div.side-menu > ul > li:hover > a,
 div.side-menu > ul > li.active > a{
     color: #fff;
-    background: #2980b9;
+    background-color: rgb(60, 152, 165);
 }
 div.side-menu > ul > li.active i.drop-icon{
 
@@ -421,11 +419,29 @@ div.side-menu > ul > li .sub-menu li{
 div.side-menu > ul > li .sub-menu li:hover{
 }
 div.side-menu > ul > li .sub-menu li a{
-  height: 30px;
 }
 div.side-menu > ul > li .sub-menu li:hover a{
 
 }
 div.side-menu > ul > li i{
 
+}
+
+aside .side-inner .nav-menu ul li a {
+
+}
+
+a.d-flex.align-items-sm-center.sub {
+  background-color: rgb(165, 214, 219);
+  height: 10%;
+  width: auto;
+}
+
+.show-sidebar aside .side-inner .logo-wrap .logo img {
+  opacity: 1;
+  visibility: visible;
+  height: 250px;
+  -webkit-transform: translateX(15%);
+  -ms-transform: translateX(15%);
+  transform: translateX(15%);
 }

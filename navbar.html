@@ -1,96 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
 
+    <!-- Style -->
+    <link rel="stylesheet" href="./src/css/navbar.css" />
   </head>
   <body>
     <aside class="sidebar">
       <div class="toggle">
-        <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-              <span></span>
-            </a>
+        <a
+          href="#"
+          class="burger js-menu-toggle"
+          data-toggle="collapse"
+          data-target="#main-navbar"
+        > <!-- CLOSE -->
+          <span></span>
+        </a>
       </div>
       <div class="side-inner">
         <div class="logo-wrap">
-          <div class="logo">
-            <span>U</span>
+          <div class="logo" >
+            <img src="./src/img/logo.png">
           </div>
-          <span class="logo-text">Universo Down</span>
         </div>
-          
+
         <div class="search-form">
           <form action="#">
             <span class="wrap-icon">
-              <span class="wrap icon fa fa-search mr-3"></span>
+              <span class="wrap icon fa fa-search ml-auto p-2"></span>
             </span>
-            <input type="text" class="form-control" placeholder="Pesquisar...">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Pesquisar..."
+            /> <!-- CLOSE -->
           </form>
         </div>
         <div class="nav-menu side-menu">
           <ul>
-            <li><a href="index.html" class="d-flex align-items-center">
-            <span class="wrap-icon fa fa-home mr-3"></span>
-            <span class="menu-text">Pagina Inicial</span></a></li>
-            <li><a href="" class="d-flex align-items-center">
-            <span class="wrap-icon fa fa-heartbeat mr-3"></span>
-            <span class="menu-text">Paciente</span></a>
+            <li>
+              <a href="index.html" class="d-flex align-items-center">
+                <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                <span class="menu-text">Pagina Inicial</span></a
+              > <!-- CLOSE -->
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center">
+                <span class="wrap-icon fa fa-heartbeat ml-auto p-2"></span>
+                <span class="menu-text">Paciente</span>
+              </a>
               <ul class="sub-menu">
-                  <li><a href="#" onclick="(window.location='paciente.html')" class="d-flex align-items-center">
-                  <span class="wrap-icon fa fa-home mr-3 ml-auto p-2"></span>
-                  <span class="menu-text">Cadastro de Paciente</span>
-                  </a></li>
-                  <li><a href="#" onclick="(window.location='paciente.html')" class="d-flex align-items-center">
-                  <span class="wrap-icon fa fa-home mr-3 ml-auto p-2"></span>
-                  <span class="menu-text">Cadastro de Paciente</span>
-                  </a></li>
-                  <li><a href="#" onclick="(window.location='paciente.html')" class="d-flex align-items-center">
-                  <span class="wrap-icon fa fa-home mr-3 ml-auto p-2"></span>
-                  <span class="menu-text">Cadastro de Paciente</span>
-                  </a></li>
-                  <li><a href="#" onclick="(window.location='paciente.html')" class="d-flex align-items-center">
-                  <span class="wrap-icon fa fa-home mr-3 ml-auto p-2"></span>
-                  <span class="menu-text">Cadastro de Paciente</span>
-                  </a></li>
-                  <li><a href="#" onclick="(window.location='paciente.html')" class="d-flex align-items-center">
-                  <span class="wrap-icon fa fa-home mr-3 ml-auto p-2"></span>
-                  <span class="menu-text">Cadastro de Paciente</span>
-                  </a></li>
-                  <li><a href="#" onclick="(window.location='paciente.html')" class="d-flex align-items-center">
-                  <span class="wrap-icon fa fa-home mr-3 ml-auto p-2"></span>
-                  <span class="menu-text">Cadastro de Paciente</span>
-                  </a></li>
-              </ul></li> 
-            <li><a href="#" class="d-flex align-items-center">
-            <span class="wrap-icon fa fa-user-md mr-3"></span>
-            <span class="menu-text">Médico</span></a></li>
-            <li><a href="#" class="d-flex align-items-center">
-            <span class="wrap-icon fa fa-medkit mr-3"></span>
-            <span class="menu-text">Espcialidade</span></a></li>
-            <li><a href="#" class="d-flex align-items-center">
-            <span class="wrap-icon 	fa fa-hospital-o mr-3"></span>
-            <span class="menu-text">Consulta</span></a></li>
-            <li><a href="#" class="d-flex align-items-center">
-            <span class="wrap-icon fa fa-cogs mr-3"></span>
-            <span class="menu-text">Configurações</span></a></li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Paciente</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Paciente</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center">
+                <span class="wrap-icon fa fa-heartbeat ml-auto p-2"></span>
+                <span class="menu-text">Médico</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Médico</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Médico</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center">
+                <span class="wrap-icon fa fa-heartbeat ml-auto p-2"></span>
+                <span class="menu-text">Especialidade</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Especialidade</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Especialidade</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center">
+                <span class="wrap-icon fa fa-heartbeat ml-auto p-2"></span>
+                <span class="menu-text">Consulta</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Consulta</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Consulta</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center">
+                <span class="wrap-icon fa fa-heartbeat ml-auto p-2"></span>
+                <span class="menu-text">Configurações</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Configurações</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="(window.location='paciente.html')"
+                    class="d-flex align-items-sm-center sub"
+                  > <!-- CLOSE -->
+                    <span class="wrap-icon fa fa-home ml-auto p-2"></span>
+                    <span class="menu-text">Cadastro de Configurações</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </aside>
+    <!-- burger -->
     <main>
-       
     </main>
     <!-- JS -->
     <script src="./src/js/main.js"></script>

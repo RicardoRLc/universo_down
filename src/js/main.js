@@ -13,11 +13,12 @@ $(function() {
             $('body').addClass('show-sidebar');	
             $this.addClass('active');
         }
+        
   
         e.preventDefault();
   
     });
-  
+
     /* Click fora do menu */
       $(document).mouseup(function(e) {
       var container = $(".sidebar");
