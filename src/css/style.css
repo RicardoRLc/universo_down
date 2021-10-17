@@ -102,6 +102,12 @@ body {
   #sidebarCollapse span {
       display: none;
   }
+
+  
+  span.menu-text.p-4 {
+    padding-top: 23px !important;
+  
+  }
 }
 
 @media (min-width: 320px) {

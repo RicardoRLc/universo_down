@@ -433,8 +433,10 @@ aside .side-inner .nav-menu ul li a {
 
 a.d-flex.align-items-sm-center.sub {
   background-color: rgb(165, 214, 219);
-  height: 10%;
+  height: 5%;
   width: auto;
+  padding-top: 0 !important;
+  padding-right: 0 !important;
 }
 
 .show-sidebar aside .side-inner .logo-wrap .logo img {
@@ -445,3 +447,15 @@ a.d-flex.align-items-sm-center.sub {
   -ms-transform: translateX(15%);
   transform: translateX(15%);
 }
+
+span.wrap-icon.fa.fa-home.p-4 {
+  padding-right: 3px !important;
+}
+
+span.menu-text.p-4 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+
+
