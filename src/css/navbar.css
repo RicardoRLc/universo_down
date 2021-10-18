@@ -82,8 +82,12 @@ aside {
   transition: 0.7s width cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+/* ---------------------------------------------------
+    MENU ABERTO
+----------------------------------------------------- */
+
 .show-sidebar aside {
-  width: 260px;
+  width: 280px;
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
