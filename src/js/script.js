@@ -35,9 +35,7 @@ $(document).on("click", ".side-menu > ul > li", function (e) {
 
     $(wrapper).on("click", ".delete", function(e) {
         e.preventDefault();
-        $(this).parent('div').remove();
+        $(this).parent('form').remove();
         x--;
     })
 });
-  
-  
