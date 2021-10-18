@@ -76,6 +76,7 @@ p {
 /* ---------------------------------------------------
     LOGIN   
 ----------------------------------------------------- */
+
 #user {
     background-color: rgb(165, 214, 219);
     color: #000;
@@ -119,6 +120,7 @@ span.input-group-addon {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
 i.fa.fa-user.fa-2x {
     color: #fff;
     font-size: 2.2rem;
@@ -128,6 +130,36 @@ i.fa.fa-lock.fa-2x {
     color: #fff;
     font-size: 2.2rem;
 }
+
+/* ---------------------------------------------------
+    ATENDIMENTO   
+----------------------------------------------------- */
+
+.linha {
+  display: flex;
+  align-items: center;
+}
+
+.linha hr {
+  flex:1;
+  margin-bottom: 1.90em;
+  margin-right: 20px;
+}
+
+.linha p i {
+  font-size: 28px; 
+  color: rgb(60, 152, 165);
+}
+
+i.bi-plus-square-fill {
+}
+
+button.add_form_field {
+  border: 0 !important;
+  background-color: transparent;
+  padding: 0 !important;
+}
+
 
 
 /* ---------------------------------------------------

@@ -12,5 +12,32 @@ $(document).on("click", ".side-menu > ul > li", function (e) {
       $(this).find(".sub-menu").stop().slideToggle();
     }
   });
+
+  /* Adicionar Form Familiar */ 
+  $(document).ready(function() {
+    var max_fields = 5;
+    var wrapper = $(".container-familiar");
+    var add_button = $(".add_form_field");
+
+    var x = 1;
+    $(add_button).click(function(e) {
+        e.preventDefault();
+        
+        if (x < max_fields) {
+            x++;
+            $.get("familiar.html", function (data) {
+              $(wrapper).append(data); 
+            });
+        } else {
+            alert('Limite Máximo de 4 Campos')
+        }
+    });
+
+    $(wrapper).on("click", ".delete", function(e) {
+        e.preventDefault();
+        $(this).parent('div').remove();
+        x--;
+    })
+});
   
   
