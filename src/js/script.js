@@ -32,7 +32,8 @@ $(document).on("click", ".side-menu > ul > li", function (e) {
             alert('Limite Máximo de 4 Campos')
         }
     });
-
+    
+    /* Remove Form Familiar */
     $(wrapper).on("click", ".delete", function(e) {
         e.preventDefault();
         $(this).parent('form').remove();
