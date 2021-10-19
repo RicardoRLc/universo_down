@@ -83,7 +83,6 @@ p {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 18px;
-
 }
 
 #pass {
@@ -92,9 +91,6 @@ p {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 18px;
-
-}
-#container-login {
 }
 
 #login-card {
@@ -105,7 +101,6 @@ p {
   position: absolute;
   top: 35%;
   left: 44%;
-
 }
 
 .card {
@@ -151,15 +146,11 @@ i.fa.fa-lock.fa-2x {
   color: rgb(60, 152, 165);
 }
 
-i.bi-plus-square-fill {
-}
-
 button.add_form_field {
   border: 0 !important;
   background-color: transparent;
   padding: 0 !important;
 }
-
 
 
 /* ---------------------------------------------------
@@ -201,8 +192,6 @@ input.form-control {
     margin-left: 35px !important;
 }
 
-
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -217,12 +206,6 @@ input.form-control {
     }
     #sidebarCollapse span {
       display: none;
-    }
-    span.wrap-icon.fa.fa-home.p-4 {
-    }
-    span.menu-text.p-4 {
-    }
-    a.d-flex.align-items-sm-center.sub {
     }
     div.card.col-9 {
         width: auto !important;
@@ -239,12 +222,6 @@ input.form-control {
   #sidebarCollapse span {
     display: none;
   }
-  span.wrap-icon.fa.fa-home.p-4 {
-  }
-  span.menu-text.p-4 {
-  }
-  a.d-flex.align-items-sm-center.sub {
-  }
 }
 
 @media (min-width: 768px) {
@@ -256,10 +233,6 @@ input.form-control {
   }
   #sidebarCollapse span {
     display: none;
-  }
-  span.wrap-icon.fa.fa-home.p-4 {
-  }
-  span.menu-text.p-4 {
   }
 }
 
@@ -291,10 +264,6 @@ input.form-control {
   }
   #sidebarCollapse span {
     display: none;
-  }
-  span.wrap-icon.fa.fa-home.p-4 {
-  }
-  span.menu-text.p-4 {
   }
   aside {
     height: 100% !important;
