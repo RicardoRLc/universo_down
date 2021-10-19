@@ -2,7 +2,7 @@
 
 Projeto Universo Down - Web Service
 
-## Rename Brench
+## Rename Branch
 
 1. git branch -m main master
 2. git fetch origin
