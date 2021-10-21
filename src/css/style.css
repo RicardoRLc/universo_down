@@ -152,6 +152,10 @@ button.add_form_field {
   padding: 0 !important;
 }
 
+.delete {
+  color: #000;
+}
+
 
 /* ---------------------------------------------------
     FORMULÁRIO
