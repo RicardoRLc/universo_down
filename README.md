@@ -39,6 +39,6 @@ feat: add hat wobble
 
 ### References:
 
-* [Conventional_Commits]https://www.conventionalcommits.org/ <a>
-* [Sees_Park_Box]https://seesparkbox.com/foundry/semantic_commit_messages
-* [Karma-Runner]http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+* https://www.conventionalcommits.org/ 
+* https://seesparkbox.com/foundry/semantic_commit_messages
+* http://karma-runner.github.io/1.0/dev/git-commit-msg.html
