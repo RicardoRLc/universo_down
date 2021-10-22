@@ -1,10 +1,7 @@
-/* ---------------------------------------------------
-    PALETA DE CORES
------------------------------------------------------ */
-#P_C {
-  color: rgb(60, 152, 165);
-  color: rgb(165, 214, 219);
-  color: rgb(244, 176, 95);
+:root {
+  --verde-escuro: color: rgb(60, 152, 165);
+  --verde-claro: color: rgb(165, 214, 219);
+  --laranja: color: rgb(244, 176, 95);
 }
 
 /* ---------------------------------------------------
@@ -72,6 +69,89 @@ p {
   min-height: 100vh;
   transition: all 0.3s;
 }
+
+/* ---------------------------------------------------
+    LOGIN   
+----------------------------------------------------- */
+
+#user {
+    background-color: rgb(165, 214, 219);
+    color: #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+
+}
+
+#pass {
+    background-color: rgb(165, 214, 219);
+    color: #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+
+}
+#container-login {
+}
+
+#login-card {
+  height: 400px;
+  width: 350px;
+  margin-left: -100px;
+  margin-top: -100px; 
+  position: absolute;
+  top: 35%;
+  left: 44%;
+
+}
+
+.card {
+    box-shadow: inset 0 0 1em rgba(158, 158, 158, 0.274), 0 0 1em rgba(0, 0, 0, 0.26);
+}
+
+span.input-group-addon {
+    background-color: rgb(60, 152, 165);
+    padding-left: 11px;
+    width: 40px;
+    height: 34px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+i.fa.fa-user.fa-2x {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+i.fa.fa-lock.fa-2x {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+/* ---------------------------------------------------
+    ATENDIMENTO   
+----------------------------------------------------- */
+
+.linha {
+  display: flex;
+  align-items: center;
+}
+
+.linha hr {
+  flex:1;
+  margin-bottom: 1.90em;
+  margin-right: 20px;
+}
+
+.linha p i {
+  font-size: 28px; 
+  color: black;
+}
+
+i.bi-plus-square-fill {
+}
+
+
 
 /* ---------------------------------------------------
     FORMULÁRIO
