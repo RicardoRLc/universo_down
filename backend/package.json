@@ -9,12 +9,13 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql2": "^2.3.2",
-    "pg": "^7.12.1",
-    "pg-hstore": "^2.3.3",
-    "sequelize": "^5.22.4"
+    "npm-check-updates": "^11.8.5",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.8.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4",
-    "sequelize-cli": "^5.5.1"
+    "nodemon": "^2.0.14",
+    "sequelize-cli": "^6.2.0"
   }
 }

@@ -30,3 +30,9 @@ routes.get('/professionalAttendances', ProfessionalAttendanceController.findAll)
 routes.post('/users/:user_id/professionalAttendances', ProfessionalAttendanceController.store);
 
 module.exports = routes;
+
+// app.get('/users', (req, res) => {}); //Listar todos
+// app.post('/users', (req, res) => {}); // Criar
+// app.get('/users/:id', (req, res) => {}); //Buscar
+// app.put('/users/:id', (req, res) => {}); //Editar
+// app.delete('/users/:id', (req, res) => {}); //Deletar
