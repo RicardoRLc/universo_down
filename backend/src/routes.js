@@ -8,6 +8,8 @@ const SpecialitiesController = require('./controllers/SpecialitiesController');
 const CalendarController = require('./controllers/CalendarController');
 const AssistedController = require('./controllers/AssistedController');
 const RelatedController = require('./controllers/RelatedController');
+const SchoolRequestController = require('./controllers/SchoolRequestController');
+const TransportRequestController = require('./controllers/TransportRequestController');
 
 const routes = express.Router();
 
@@ -42,6 +44,12 @@ routes.post('/assisteds', AssistedController.store);
 
 routes.get('/assisteds/:assisted_id/relateds', RelatedController.index);
 routes.post('/assisteds/:assisted_id/relateds', RelatedController.store);
+
+routes.get('/assisteds/:assisted_id/school_requests', SchoolRequestController.index);
+routes.post('/assisteds/:assisted_id/school_requests', SchoolRequestController.store);
+
+routes.get('/assisteds/:assisted_id/transport_requests', TransportRequestController.index);
+routes.post('/assisteds/:assisted_id/transport_requests', TransportRequestController.store);
 
 
 

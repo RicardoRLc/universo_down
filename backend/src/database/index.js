@@ -9,6 +9,9 @@ const Specialities = require('../models/Specialities');
 const Calendar = require('../models/Calendar');
 const Assisted = require('../models/Assisted');
 const Related = require('../models/Related');
+const SchoolRequest = require('../models/SchoolRequest');
+const TransportRequest = require('../models/TransportRequest');
+
 
 const connection = new Sequelize(dbConfig);
 
@@ -20,7 +23,8 @@ Specialities.init(connection);
 Calendar.init(connection);
 Assisted.init(connection);
 Related.init(connection);
-
+SchoolRequest.init(connection);
+TransportRequest.init(connection);
 
 User.associate(connection.models);
 Organization.associate(connection.models);
@@ -30,5 +34,7 @@ Specialities.associate(connection.models);
 Calendar.associate(connection.models);
 Assisted.associate(connection.models);
 Related.associate(connection.models);
+SchoolRequest.associate(connection.models);
+TransportRequest.associate(connection.models);
 
 module.exports = connection;
