@@ -18,6 +18,7 @@ routes.get('/organizations/:organization_id/users', UserController.index);
 routes.post('/organizations/:organization_id/users', UserController.store);
 
 routes.get('/users/:user_id/specialities', SpecialitiesController.index);
+routes.get('/specialities', SpecialitiesController.findAll);
 routes.post('/users/:user_id/specialities', SpecialitiesController.store);
 
 routes.get('/users/:user_id/evolutionRecords', EvolutionRecordController.index);
