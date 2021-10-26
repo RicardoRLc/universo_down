@@ -13,6 +13,7 @@ const routes = express.Router();
 
 routes.get('/organizations', OrganizationController.index);
 routes.post('/organizations', OrganizationController.store);
+routes.delete('/organizations/:organization_id/delete', OrganizationController.delete);
 
 routes.get('/organizations/:organization_id/users', UserController.index);
 routes.post('/organizations/:organization_id/users', UserController.store);
