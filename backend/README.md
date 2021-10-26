@@ -17,7 +17,7 @@
 5. Rode `yarn sequelize db:create` para criar o banco de dados;
 6. Rode `yarn sequelize db:migrate` para executar as migrations;
 7. Rode `yarn dev` para iniciar o servidor.
-8. Importe o arquivo `Insomnia_2019-10-16.json` desse repositório no Insomnia;
+8. Importe o arquivo `Insomnia_universo_down.json` desse repositório no Insomnia;
 
 ## Como contribuir
 
