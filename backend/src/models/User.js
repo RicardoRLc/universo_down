@@ -31,6 +31,7 @@ class User extends Model {
 
   static associate(models) {
     this.belongsTo(models.Organization, { foreignKey: 'organization_id', as: 'organizations' });
+    this.belongsToMany(models.Calendar, { foreignKey: 'user_id', through: 'user_calendars', as: 'calendars' });
     this.hasMany(models.EvolutionRecord, { foreignKey: 'user_id', as: 'evolution_records' });
     this.hasMany(models.ProfessionalAttendance, { foreignKey: 'user_id', as: 'professional_attendances' });
     this.hasMany(models.Specialities, { foreignKey: 'user_id', as: 'specialities' });
