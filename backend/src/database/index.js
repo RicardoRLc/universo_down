@@ -7,6 +7,8 @@ const EvolutionRecord = require('../models/EvolutionRecord');
 const ProfessionalAttendance = require('../models/ProfessionalAttendance');
 const Specialities = require('../models/Specialities');
 const Calendar = require('../models/Calendar');
+const Assisted = require('../models/Assisted');
+const Related = require('../models/Related');
 
 const connection = new Sequelize(dbConfig);
 
@@ -16,6 +18,9 @@ EvolutionRecord.init(connection);
 ProfessionalAttendance.init(connection);
 Specialities.init(connection);
 Calendar.init(connection);
+Assisted.init(connection);
+Related.init(connection);
+
 
 User.associate(connection.models);
 Organization.associate(connection.models);
@@ -23,5 +28,7 @@ EvolutionRecord.associate(connection.models);
 ProfessionalAttendance.associate(connection.models);
 Specialities.associate(connection.models);
 Calendar.associate(connection.models);
+Assisted.associate(connection.models);
+Related.associate(connection.models);
 
 module.exports = connection;
