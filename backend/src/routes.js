@@ -5,6 +5,7 @@ const UserController = require('./controllers/UserController');
 const EvolutionRecordController = require('./controllers/EvolutionRecordController');
 const ProfessionalAttendanceController = require('./controllers/ProfessionalAttendanceController');
 const SpecialitiesController = require('./controllers/SpecialitiesController');
+const CalendarController = require('./controllers/CalendarController');
 
 const routes = express.Router();
 
@@ -29,5 +30,13 @@ routes.post('/users/:user_id/evolutionRecords', EvolutionRecordController.store)
 routes.get('/users/:user_id/professionalAttendances', ProfessionalAttendanceController.index);
 routes.get('/professionalAttendances', ProfessionalAttendanceController.findAll);
 routes.post('/users/:user_id/professionalAttendances', ProfessionalAttendanceController.store);
+
+routes.get('/users/:user_id/calendars', CalendarController.index);
+routes.get('/calendars', CalendarController.findAll);
+routes.post('/users/:user_id/calendars', CalendarController.store);
+
+
+
+
 
 module.exports = routes;
