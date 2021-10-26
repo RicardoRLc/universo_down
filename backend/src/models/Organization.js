@@ -13,7 +13,7 @@ class Organization extends Model {
   }
 
   static associate(models) {
-    this.hasMany(models.User, {foreignKey: 'organization_id', as: 'organizations' });
+    this.hasMany(models.User, {foreignKey: 'organization_id', as: 'user' });
   }
 }
 
