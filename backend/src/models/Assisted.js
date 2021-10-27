@@ -40,6 +40,8 @@ class Assisted extends Model {
     this.hasMany(models.Related, { foreignKey: "assisted_id", as: "relateds" });
     this.hasMany(models.SchoolRequest, { foreignKey: "assisted_id", as: "school_requests" });
     this.hasMany(models.TransportRequest, { foreignKey: "assisted_id", as: "transpor_requests" });
+
+    this.hasMany(models.EvolutionRecord, { as: 'evolution_records', foreignKey: 'assisted_id'});
   }
 }
 

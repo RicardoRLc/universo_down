@@ -10,6 +10,7 @@ const AssistedController = require('./controllers/AssistedController');
 const RelatedController = require('./controllers/RelatedController');
 const SchoolRequestController = require('./controllers/SchoolRequestController');
 const TransportRequestController = require('./controllers/TransportRequestController');
+const ReportController = require('./controllers/ReportController');
 
 const routes = express.Router();
 
@@ -29,7 +30,7 @@ routes.post('/users/:user_id/specialities', SpecialitiesController.store);
 
 routes.get('/users/:user_id/evolutionRecords', EvolutionRecordController.index);
 routes.get('/evolutionRecords', EvolutionRecordController.findAll);
-routes.post('/users/:user_id/evolutionRecords', EvolutionRecordController.store);
+routes.post('/users/:user_id/assisted/:assisted_id/evolutionRecords', EvolutionRecordController.store);
 
 routes.get('/users/:user_id/professionalAttendances', ProfessionalAttendanceController.index);
 routes.get('/professionalAttendances', ProfessionalAttendanceController.findAll);
@@ -53,6 +54,7 @@ routes.post('/assisteds/:assisted_id/transport_requests', TransportRequestContro
 
 
 
+routes.get('/report', ReportController.show);
 
 
 

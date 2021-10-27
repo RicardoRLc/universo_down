@@ -21,6 +21,7 @@ module.exports = {
 
   async store(req, res) {
     const { user_id } = req.params;
+    const { assisted_id } = req.params;
     const {  
         date,
         status,
@@ -34,7 +35,7 @@ module.exports = {
     if (!user) {
       return res.status(400).json({ error: 'User not found' });
     }
-
+    
     const evolutionRecord = await EvolutionRecord.create({
         date,
         status,
@@ -42,6 +43,7 @@ module.exports = {
         height,
         report,
         user_id,
+        assisted_id,
     });
 
     return res.json(evolutionRecord);
