@@ -16,6 +16,13 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
+      assisted_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false, // ATENCAO
+        references: { model: 'assisteds', key: 'id' },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
+      },
       date: {
         type: Sequelize.STRING,
         allowNull: false,
