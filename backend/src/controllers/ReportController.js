@@ -1,8 +1,12 @@
 const { Op } = require('sequelize');
+const express = require('express')
+
 const EvolutionRecord = require('../models/EvolutionRecord');
 const User = require('../models/User');
 const Organization = require('../models/Organization')
 const Assisted = require('../models/Assisted')
+
+
 module.exports = {
   async show(req, res) {
     const organ = await EvolutionRecord.findAll({ 
@@ -14,10 +18,9 @@ module.exports = {
       ]
     });
     
-    console.log(JSON.stringify(organ, null, 2));
-    // return res.json.stringify(organ);
+    // console.log(JSON.stringify(organ, null, 2));
 
-    // return res.json(organ);
+    return res.json(organ);
 
   }
 };
