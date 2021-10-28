@@ -1,39 +1,26 @@
 const { Op } = require('sequelize');
+const express = require('express')
+
 const EvolutionRecord = require('../models/EvolutionRecord');
 const User = require('../models/User');
+const Organization = require('../models/Organization')
+const Assisted = require('../models/Assisted')
+
 
 module.exports = {
   async show(req, res) {
-    // Encontrar todos usuários que tem email que termina com @rocketseat.com.br
-    // Desses usuários eu quero buscar todos que moram na rua "Rua Guilherme Gembala"
-    // Desses usuários eu quero buscar as tecnologias que começam com React
-
-    const users = await EvolutionRecord.findAll({
-      attributes: ['status'],
-      where: {
-        email: {
-          [Op.iLike]: 'OK'
-        }
-      },
+    const organ = await EvolutionRecord.findAll({ 
       include: [
-        { 
-          association: 'user', 
-          where: { 
-            first_name: 'Luiz'
-          } 
-        },
-        { 
-          association: 'assisteds', 
-          required: false,
-          where: {
-            name: 
-               'Teste'
-            
-          }
-        },
+        {
+          model: User, as: "user",
+          model: Assisted, as: "assisteds"
+        }
       ]
-    })
+    });
+    
+    // console.log(JSON.stringify(organ, null, 2));
 
-    return res.json(users);
+    return res.json(organ);
+
   }
 };
